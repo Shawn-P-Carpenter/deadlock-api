@@ -16,6 +16,7 @@ GET - gets the heroes all time statistics
 **/hero-stat/current-patch/<hero_name>**
 
 GET - gets the heroes stats for the current patch
+
 *Path Parameters*
 - hero_name: The name of the hero you are querying for
 
@@ -24,6 +25,7 @@ GET - gets the heroes stats for the current patch
 **/hero-win-rate/current-patch/<hero_name>**
 
 GET - gets the heroes win rate for the current patch
+
 *Path Parameters*
 - hero_name: The name of the hero you are querying for
 
@@ -36,25 +38,32 @@ GET - gets a list of all heroes and their win rates in the current patch
 **/hero-items/current-patch/<hero_name>?sort=SORT**
 
 GET - gets either the top or bottom five items in the current patch for a given hero based on win rate
+
 *Path Parameters*
 - hero_name: The name of the hero you are querying for
+
 *Query Parameters*
 - sort: Either top or bottom, for which subset of items you want to view(the top win rate or the bottom win rate)
 
 *example*: /hero-items/current-patch/wraith?sort=top
+
 *example*: /hero-items/current-patch/seven?sort=bottom
 
 **/hero-items/current-patch/<hero_name>/<item_type>?sort=SORT**
 
 GET - gets either the top or bottom five items in the current patch for a given hero and item type based on win rate
+
 *Path Parameters*
 - hero_name: The name of the hero you are querying for
 - item_type: The type of item you want to query for(Spirit, Weapon, or Vitality)
+
 *Query Parameters*
 - sort: Either top or bottom, for which subset of items you want to view(the top win rate or the bottom win rate)
 
 *example*: /hero-items/current-patch/yamato/spirit?sort=top
+
 *example*: /hero-items/current-patch/vyper/weapon?sort=bottom
+
 *example*: /hero-items/current-patch/dynamo/vitality?sort=top
 
 ## Quick-Start/Install Instructions ##
